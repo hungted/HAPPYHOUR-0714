@@ -18,6 +18,19 @@ $(document).ready(function(){
         $(this).find(".info-qa").show();
     });
 
+    $(".boness").click(function(){
+        let QA = localStorage.getItem("qa");
+        if(QA == 15){
+            localStorage.setItem("qa", "16")
+            window.setTimeout(( () =>$('#part5').css("position","unset") ), 2000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part5').offset().top+10000}, 100)), 2100);
+            window.setTimeout(( () =>$('#part5-2').css("position","unset") ), 4000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part5-2').offset().top+10000}, 100)), 4100);
+            window.setTimeout(( () =>$('#QA16').css("position","unset") ), 6000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#QA16').offset().top+10000}, 100)), 6100);
+        }
+    });
+
     $(".sumit-btn").on('click', function() {
         let QA = localStorage.getItem("qa");
         if(QA == 1){
@@ -121,16 +134,8 @@ $(document).ready(function(){
             $('.chat-content').animate({scrollTop: $('#MES14').offset().top+10000}, 100);
             window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#QA15').offset().top+10000}, 100)), 2100);
         }else if(QA == 15){
-            localStorage.setItem("qa", "16")
             $('#MES15').show();
             $('.chat-content').animate({scrollTop: $('#MES15').offset().top+10000}, 100);
-
-            window.setTimeout(( () =>$('#part5').css("position","unset") ), 2000);
-            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part5').offset().top+10000}, 100)), 2100);
-            window.setTimeout(( () =>$('#part5-2').css("position","unset") ), 4000);
-            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part5-2').offset().top+10000}, 100)), 4100);
-            window.setTimeout(( () =>$('#QA16').css("position","unset") ), 6000);
-            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#QA16').offset().top+10000}, 100)), 6100);
         }else if(QA == 16){
             localStorage.setItem("qa", "17")
             $('#MES16').show();

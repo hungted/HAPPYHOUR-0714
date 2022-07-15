@@ -346,6 +346,15 @@ section {
   background-image: url(https://www.wundermanthompson.com/img/wt-mark-3d-light-blue.svg);
 }
 
+.game .boness {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 8vw;
+  height: 8vw;
+  background-color: #333;
+}
+
 .game .header {
   position: -webkit-sticky;
   position: sticky;
@@ -424,6 +433,7 @@ section {
   border-radius: 10px;
   font-size: 30px;
   padding: 0 20px;
+  color: #333;
 }
 
 .game .chat-content .left-mes .mes .info .info-qa {

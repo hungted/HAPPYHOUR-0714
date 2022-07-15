@@ -211,6 +211,14 @@ section{
     z-index: -99;
     background-color: rgb(10, 71, 237);
     background-image: url(https://www.wundermanthompson.com/img/wt-mark-3d-light-blue.svg);
+    .boness{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 8vw;
+        height: 8vw;
+        background-color: #333;
+    }
     .header{
         position: sticky;
         top: 0;
