@@ -6,7 +6,11 @@ $(document).ready(function(){
         localStorage.setItem("qa", "1")
         let ftQA = localStorage.getItem("qa");
         if(ftQA == 1){
-            window.setTimeout(( () =>$('#QA1').css("position","unset") ), 3000);
+            window.setTimeout(( () =>$('#part1').css("position","unset") ), 2000);
+            window.setTimeout(( () =>$('#part1-2').css("position","unset") ), 4000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part1-2').offset().top+10000}, 100)), 4100);
+            window.setTimeout(( () =>$('#QA1').css("position","unset") ), 6000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#QA1').offset().top+10000}, 100)), 6100);
         }
     });
     $(".info").click(function(){
@@ -49,9 +53,15 @@ $(document).ready(function(){
         }else if(QA == 6){
             localStorage.setItem("qa", "7")
             $('#MES6').show();
-            window.setTimeout(( () =>$('#QA7').css("position","unset") ), 2000);
             $('.chat-content').animate({scrollTop: $('#MES6').offset().top+10000}, 100);
-            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#QA7').offset().top+10000}, 100)), 2100);
+
+            window.setTimeout(( () =>$('#part2').css("position","unset") ), 2000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part2').offset().top+10000}, 100)), 2100);
+            window.setTimeout(( () =>$('#part2-2').css("position","unset") ), 4000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part2-2').offset().top+10000}, 100)), 4100);
+            window.setTimeout(( () =>$('#QA7').css("position","unset") ), 6000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#QA7').offset().top+10000}, 100)), 6100);
+
         }else if(QA == 7){
             localStorage.setItem("qa", "8")
             $('#MES7').show();
@@ -73,9 +83,14 @@ $(document).ready(function(){
         }else if(QA == 10){
             localStorage.setItem("qa", "11")
             $('#MES10').show();
-            window.setTimeout(( () =>$('#QA11').css("position","unset") ), 2000);
             $('.chat-content').animate({scrollTop: $('#MES10').offset().top+10000}, 100);
-            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#QA11').offset().top+10000}, 100)), 2100);
+
+            window.setTimeout(( () =>$('#part3').css("position","unset") ), 2000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part3').offset().top+10000}, 100)), 2100);
+            window.setTimeout(( () =>$('#part3-2').css("position","unset") ), 4000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part3-2').offset().top+10000}, 100)), 4100);
+            window.setTimeout(( () =>$('#QA11').css("position","unset") ), 6000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#QA11').offset().top+10000}, 100)), 6100);
         }else if(QA == 11){
             localStorage.setItem("qa", "12")
             $('#MES11').show();
@@ -91,9 +106,14 @@ $(document).ready(function(){
         }else if(QA == 13){
             localStorage.setItem("qa", "14")
             $('#MES13').show();
-            window.setTimeout(( () =>$('#QA14').css("position","unset") ), 2000);
             $('.chat-content').animate({scrollTop: $('#MES13').offset().top+10000}, 100);
-            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#QA14').offset().top+10000}, 100)), 2100);
+
+            window.setTimeout(( () =>$('#part4').css("position","unset") ), 2000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part4').offset().top+10000}, 100)), 2100);
+            window.setTimeout(( () =>$('#part4-2').css("position","unset") ), 4000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part4-2').offset().top+10000}, 100)), 4100);
+            window.setTimeout(( () =>$('#QA14').css("position","unset") ), 6000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#QA14').offset().top+10000}, 100)), 6100);
         }else if(QA == 14){
             localStorage.setItem("qa", "15")
             $('#MES14').show();
@@ -102,10 +122,24 @@ $(document).ready(function(){
             window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#QA15').offset().top+10000}, 100)), 2100);
         }else if(QA == 15){
             localStorage.setItem("qa", "16")
-            $('#MES15').show();
-            // window.setTimeout(( () =>$('#QA16').css("position","unset") ), 2000);
-            $('.chat-content').animate({scrollTop: $('#MES15').offset().top+10000}, 100);
-            // window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#QA16').offset().top+10000}, 100)), 2100);
+            $('#MES16').show();
+            $('.chat-content').animate({scrollTop: $('#MES16').offset().top+10000}, 100);
+
+            window.setTimeout(( () =>$('#part5').css("position","unset") ), 2000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part5').offset().top+10000}, 100)), 2100);
+            window.setTimeout(( () =>$('#part5-2').css("position","unset") ), 4000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part5-2').offset().top+10000}, 100)), 4100);
+            window.setTimeout(( () =>$('#QA16').css("position","unset") ), 6000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#QA16').offset().top+10000}, 100)), 6100);
+        }else if(QA == 16){
+            localStorage.setItem("qa", "17")
+            $('#MES16').show();
+            $('.chat-content').animate({scrollTop: $('#MES16').offset().top+10000}, 100);
+            
+            window.setTimeout(( () =>$('#part6').css("position","unset") ), 2000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part6').offset().top+10000}, 100)), 2100);
+            window.setTimeout(( () =>$('#part6-2').css("position","unset") ), 4000);
+            window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part6-2').offset().top+10000}, 100)), 4100);
         }else{
             console.log("over")
         }
