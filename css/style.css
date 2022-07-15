@@ -352,7 +352,7 @@ section {
   bottom: 0;
   width: 8vw;
   height: 8vw;
-  background-color: #333;
+  border: 1px solid rgba(255, 255, 255, 0.159);
 }
 
 .game .header {
