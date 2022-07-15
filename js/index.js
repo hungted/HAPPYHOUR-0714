@@ -122,8 +122,8 @@ $(document).ready(function(){
             window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#QA15').offset().top+10000}, 100)), 2100);
         }else if(QA == 15){
             localStorage.setItem("qa", "16")
-            $('#MES16').show();
-            $('.chat-content').animate({scrollTop: $('#MES16').offset().top+10000}, 100);
+            $('#MES15').show();
+            $('.chat-content').animate({scrollTop: $('#MES15').offset().top+10000}, 100);
 
             window.setTimeout(( () =>$('#part5').css("position","unset") ), 2000);
             window.setTimeout(( () =>$('.chat-content').animate({scrollTop: $('#part5').offset().top+10000}, 100)), 2100);
